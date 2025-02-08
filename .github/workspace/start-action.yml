@@ -5,11 +5,12 @@ on:
     types:
       - opened
       - synchronize
+  workflow_dispatch:            #Used for testing must remove before actual PR
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-      run: |
-        echo "Hello Dave"
+        run: |
+          echo "Hello Dave"
