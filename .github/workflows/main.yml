@@ -5,6 +5,7 @@ on:
     types:
       - opened
       - synchronize
+  workflow_dispatch:            #Used for testing must remove before actual PR
 
 jobs:
   test:
